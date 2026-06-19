@@ -19,9 +19,8 @@ df_dia['%_nulos_campos_criticos'] = (df_dia['nulos_campos_criticos'] / df_dia['r
 # % duplicados = duplicados / registros_recibidos
 df_dia['%_duplicados'] = (df_dia['duplicados'] / df_dia['registros_recibidos'] * 100).fillna(0).round(2)
 
-# prom_latencia = promedio de latencia_minutos por tabla
-prom_lat = df_dia.groupby('tabla')['latencia_minutos'].mean()
-df_dia['prom_latencia'] = df_dia['tabla'].map(prom_lat)
+# prom_latencia = latencia_minutos (una fila por tabla por día)
+df_dia['prom_latencia'] = df_dia['latencia_minutos']
 
 # UMBRALES PARA CADA DOMINIO
 umbrales_dominio = {
