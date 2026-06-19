@@ -1,0 +1,7 @@
+
+1)	Estamos seguros que los datos que reportamos son confiables porque tenemos alertas y tableros que nos permiten ver la salud y la calidad de nuestros datos. Constantemente estamos monitoreándolo y las alertas nos avisan en el momento que un dato no se procesó correctamente o tiene una incidencia de calidad. 
+
+2)	Revisaría cuales son los tableros más usados o los modelos de ML con más impacto en el negocio. Me fijaría en el linaje para saber qué tablas los consumen. Por último, miraría cuáles son esas tablas y chequearía si ya tenemos un data contract con la metadata y validaciones de datos en esas tablas. En caso contrario, buscaría data owners para que me ayuden a armar el data contract y las reglas de negocio y empezaría a validar las tablas más críticas. 
+
+3)	Si retail_ventas viene con problemas hace 3 meses y nadie lo notó es porque esos datos no están siendo relevantes o nadie los está usando. Revisaría el linaje para ver qué tableros están consumiendo esas tablas y miraría las métricas de uso de esos reportes. Si no tienen visitas hablaría con negocio para ver si los KPIS les son útiles sino suspendería la ingesta de la tabla. 
+Que banco_credito haya tenido solo 1 incidente y ya lo estén reportando es porque esos datos son críticos y se usan en varios productos de datos.
