@@ -1,5 +1,5 @@
 import pandas as pd
-import enviar_reporte
+import Nivel_2_Enviar_reporte as enviar_reporte
 
 df = pd.read_csv('ingestion_log.csv')
 df['fecha'] = pd.to_datetime(df['fecha'])

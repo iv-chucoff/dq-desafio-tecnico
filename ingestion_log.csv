@@ -186,7 +186,6 @@ fecha,dominio,tabla,registros_esperados,registros_recibidos,nulos_campos_critico
 2024-09-16,banco_creditos,otorgamientos,1500,0,0,0,0,MISSING
 2024-09-16,banco_creditos,cobranzas,3200,0,0,0,0,MISSING
 2024-09-16,retail_ventas,tickets,8400,8370,0,0,19,OK
-2024-09-16,rrhh_novedades,empleados,200,199,0,0,8,OK
 2024-09-17,banco_creditos,otorgamientos,1500,1493,0,0,20,OK
 2024-09-17,banco_creditos,cobranzas,3200,3104,576,0,94,WARNING
 2024-09-17,retail_ventas,tickets,8400,8382,0,0,15,OK

@@ -1,0 +1,30 @@
+{
+  "Ivana Chucoff": [
+    {
+      "dominio": "banco_creditos",
+      "tabla": "otorgamientos",
+      "owner": "Ivana Chucoff",
+      "severidad": "ALTA",
+      "tipo": "Datos faltantes",
+      "detalle": "banco_creditos.otorgamientos: 100.0% faltantes (umbral: < 10%). Recibidos: 0 / Esperados: 1500."
+    },
+    {
+      "dominio": "banco_creditos",
+      "tabla": "cobranzas",
+      "owner": "Ivana Chucoff",
+      "severidad": "ALTA",
+      "tipo": "Datos faltantes",
+      "detalle": "banco_creditos.cobranzas: 100.0% faltantes (umbral: < 10%). Recibidos: 0 / Esperados: 3200."
+    }
+  ],
+  "Juan Figueroa": [
+    {
+      "dominio": "rrhh_novedades",
+      "tabla": "empleados",
+      "owner": "Juan Figueroa",
+      "severidad": "CRITICA",
+      "tipo": "Archivo no entregado",
+      "detalle": "rrhh_novedades.empleados no está registrada en el log del 2024-09-16 00:00:00."
+    }
+  ]
+}
